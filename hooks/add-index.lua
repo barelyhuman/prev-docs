@@ -33,6 +33,9 @@ function Writer(filedata)
     local source_data = json.decode(filedata)
 
     local template = [[
+<div class="container search-container">
+    <div id="search"></div>
+</div>
 <header class="container">
 <nav>
 {{$baseurl:=.Meta.BaseURL}}

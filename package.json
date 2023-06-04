@@ -1,0 +1,14 @@
+{
+  "name": "prev-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:barelyhuman/prev-docs.git",
+  "author": "Reaper Gelera <ahoy@barelyhuman.dev>",
+  "license": "MIT",
+  "scripts": {
+    "g:search": "npx pagefind --source dist"
+  },
+  "devDependencies": {
+    "pagefind": "^0.12.0"
+  }
+}
