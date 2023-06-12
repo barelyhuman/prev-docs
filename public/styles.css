@@ -3,11 +3,11 @@
 
 :root {
   --pagefind-ui-scale: 0.8;
-  --pagefind-ui-primary: #034ad8;
-  --pagefind-ui-text: #393939;
-  --pagefind-ui-background: #ffffff;
-  --pagefind-ui-border: #eeeeee;
-  --pagefind-ui-tag: #eeeeee;
+  --pagefind-ui-primary: #82dbc5;
+  --pagefind-ui-text: #efefef;
+  --pagefind-ui-background: #181819;
+  --pagefind-ui-border: #111;
+  --pagefind-ui-tag: #111;
   --pagefind-ui-border-width: 1px;
   --pagefind-ui-border-radius: 6px;
   --pagefind-ui-image-border-radius: 8px;
@@ -16,11 +16,12 @@
 
   --font-sans: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", "Menlo", monospace;
-  --primary-bg: #fdfeff;
-  --primary-text: #111111;
-  --secondary-bg: #f1f1f8;
+  --primary-bg: #1e1e20;
+  --primary-text: #efefef;
+  --secondary-bg: #181819;
   --secondary-text: #9b9b9b;
   --underline-bg: #aaafb5;
+  --accent: #82dbc5;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -48,7 +49,8 @@ body {
   color: var(--primary-text);
   background: var(--primary-bg);
 
-  border-bottom: 8px solid #333;
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--accent);
 
   display: flex;
   flex-direction: column;
@@ -68,6 +70,10 @@ main {
 
 a {
   color: var(--primary-text);
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 .container {
@@ -119,6 +125,7 @@ header a {
 }
 
 header a:hover {
+  color: var(--accent);
   text-decoration: underline;
 }
 
@@ -159,9 +166,9 @@ summary {
   cursor: pointer;
 }
 
-summary>h2,
-summary>h3,
-summary>h4 {
+summary > h2,
+summary > h3,
+summary > h4 {
   display: inline;
   margin-left: 8px;
 }
@@ -209,7 +216,7 @@ pre {
   flex-direction: row;
 }
 
-pre>code {
+pre > code {
   flex-shrink: 0;
   display: block;
   padding: 1em;
@@ -217,7 +224,7 @@ pre>code {
   -webkit-text-size-adjust: none;
 }
 
-pre>code {
+pre > code {
   width: 100%;
 }
 
@@ -253,8 +260,8 @@ code {
   line-height: 2em;
 }
 
-.search-container{
-  padding:10px;
-  margin-top:8px;
-  margin-bottom:8px;
+.search-container {
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
